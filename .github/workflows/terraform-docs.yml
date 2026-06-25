@@ -1,0 +1,31 @@
+name: Generate terraform-docs
+
+on:
+  push:
+    paths:
+      - '*.tf'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: terraform-docs/gh-actions@v1
+        with:
+          output-file: README.md
+          output-method: inject
+          working-dir: .
+
+      - name: Fix file ownership
+        run: sudo chown -R "$USER:$USER" .
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: update terraform-docs in README"
+          file_pattern: README.md

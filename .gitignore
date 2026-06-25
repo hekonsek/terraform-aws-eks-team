@@ -1,0 +1,11 @@
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+test/.terraform/
+test/.terraform.lock.hcl
+test/terraform.tfstate
+test/terraform.tfstate.*
+test/eks_team_test
