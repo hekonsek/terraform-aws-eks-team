@@ -170,7 +170,6 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_access_entry_arns"></a> [access\_entry\_arns](#output\_access\_entry\_arns) | EKS access entry ARNs created for the team's IAM principals. |
-| <a name="output_aws_eks_update_kubeconfig_command"></a> [aws\_eks\_update\_kubeconfig\_command](#output\_aws\_eks\_update\_kubeconfig\_command) | AWS CLI command an authorized principal can run after IAM and EKS access are applied. |
 | <a name="output_cluster_describe_policy_arn"></a> [cluster\_describe\_policy\_arn](#output\_cluster\_describe\_policy\_arn) | IAM policy ARN granting eks:DescribeCluster, if cluster describe access is enabled. |
 | <a name="output_kubernetes_group"></a> [kubernetes\_group](#output\_kubernetes\_group) | Kubernetes group bound to the team namespace. |
 | <a name="output_namespace"></a> [namespace](#output\_namespace) | Kubernetes namespace created for the team. |

@@ -32,8 +32,3 @@ output "resource_quota_name" {
   description = "Kubernetes ResourceQuota name when one is created."
   value       = length(kubernetes_resource_quota_v1.team) > 0 ? kubernetes_resource_quota_v1.team[0].metadata[0].name : null
 }
-
-output "aws_eks_update_kubeconfig_command" {
-  description = "AWS CLI command an authorized principal can run after IAM and EKS access are applied."
-  value       = "aws eks update-kubeconfig --name ${var.cluster_name} --region <aws-region>"
-}
