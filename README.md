@@ -120,8 +120,8 @@ Set `TERRATEST_SKIP_DEPLOY=1` to compile and run the test package without provis
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.51.0 |
-| <a name="provider_kubernetes"></a> [kubernetes](#provider\_kubernetes) | 3.2.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.35.0 |
+| <a name="provider_kubernetes"></a> [kubernetes](#provider\_kubernetes) | >= 2.38.0 |
 
 ## Modules
 
